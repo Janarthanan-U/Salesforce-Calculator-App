@@ -1,0 +1,52 @@
+<template>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" readonly value={displayValue} />
+        </div>
+        <div class="buttons">
+            <!-- Basic Operations -->
+            <button onclick={handleButtonClick}>+</button>
+            <button onclick={handleButtonClick}>-</button>
+            <button onclick={handleButtonClick}>x</button>
+            <button onclick={handleButtonClick}>/</button>
+            <button onclick={handleButtonClick}>1</button>
+            <button onclick={handleButtonClick}>2</button>
+            <button onclick={handleButtonClick}>3</button>
+            <button onclick={handleButtonClick}>4</button>
+            <button onclick={handleButtonClick}>5</button>
+            <button onclick={handleButtonClick}>6</button>
+            <button onclick={handleButtonClick}>7</button>
+            <button onclick={handleButtonClick}>8</button>
+            <button onclick={handleButtonClick}>9</button>
+            <button onclick={handleButtonClick}>0</button>
+            <button onclick={handleButtonClick}>.</button>
+            <button onclick={handleButtonClick}>C</button>
+
+            <!-- Scientific Functions -->
+            <button onclick={handleButtonClick}>=</button>
+            <button onclick={handleButtonClick}>sin</button>
+            <button onclick={handleButtonClick}>cos</button>
+            <button onclick={handleButtonClick}>tan</button>
+            <button onclick={handleButtonClick}>sqrt</button>
+            <button onclick={handleButtonClick}>log</button>
+            <button onclick={handleButtonClick}>pi</button>
+            <button onclick={handleButtonClick}>e</button>
+            <button onclick={handleButtonClick}>^</button>
+
+            <!-- Parentheses -->
+            <button onclick={handleButtonClick}>(</button>
+            <button onclick={handleButtonClick}>)</button>
+
+        </div>
+        <div style="align-items: center;" >
+            <lightning-button 
+                variant="brand"
+                label="Back"
+                onclick={handleClick}
+                class="slds-m-around_medium">
+            </lightning-button>
+        </div>
+        
+
+    </div>
+</template>

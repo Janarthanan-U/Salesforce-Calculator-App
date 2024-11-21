@@ -1,0 +1,36 @@
+<template>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" readonly value={displayValue} />
+        </div>
+        <div class="buttons">
+            <button onclick={handleButtonClick}>+</button>
+            <button onclick={handleButtonClick}>-</button>
+            <button onclick={handleButtonClick}>x</button>
+            <button onclick={handleButtonClick}>/</button>
+            <button onclick={handleButtonClick}>1</button>
+            <button onclick={handleButtonClick}>2</button>            
+            <button onclick={handleButtonClick}>3</button>
+            <button onclick={handleButtonClick}>4</button>            
+            <button onclick={handleButtonClick}>5</button>
+            <button onclick={handleButtonClick}>6</button>        
+            <button onclick={handleButtonClick}>7</button>
+            <button onclick={handleButtonClick}>8</button>        
+            <button onclick={handleButtonClick}>9</button>
+            <button onclick={handleButtonClick}>0</button>
+            <button onclick={handleButtonClick}>.</button>
+            <button onclick={handleButtonClick}>=</button>
+            <button onclick={handleButtonClick}>C</button>
+            <!-- Add more scientific buttons if needed -->
+        </div>
+
+        <div style="align-items: center;" >
+            <lightning-button 
+                variant="brand"
+                label="Back"
+                onclick={handleClick}
+                class="slds-m-around_medium">
+            </lightning-button>
+        </div>
+    </div>
+</template>
